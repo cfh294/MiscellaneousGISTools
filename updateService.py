@@ -78,7 +78,7 @@ if __name__ == "__main__":
         SignInToPortal_server(ARCGIS_ONLINE_USER, ARCGIS_ONLINE_PASSWORD, "http://www.arcgis.com/")
     except ExecuteError:
         logger.setLevel(logging.ERROR)
-        logger.error("Could not log into ArcGIS Online, check credential evn variables!")
+        logger.error("Could not log into ArcGIS Online, check credential env variables!")
         sys.exit(1)
     logger.info("Login successful\n")
 
